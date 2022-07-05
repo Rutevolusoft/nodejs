@@ -8,7 +8,6 @@ public app: express.Application;
 public constructor() {
   this.app = express();
   this.app.use(cors());
-
   this.initMongoose();
   this.connectDatabase();
 }
